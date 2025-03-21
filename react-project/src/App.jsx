@@ -11,7 +11,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
-import Profile from './pages/Profile';
+// import Profile from './pages/Profile';
+import NotFound from './pages/NotFound';
 
 
 
@@ -29,11 +30,11 @@ function App() {
     <Navbar/>
     <Routes>
 <Route path='/' element={<Home/>}/>
-<Route path='/profile' element={<Profile/>}/>
+{/* <Route path='/profile' element={<Profile/>}/> */}
 <Route path='/project' element={<ProjectsPage/>}/>
 <Route path='/about' element={<About/>}/>
 <Route path='/projects/:id' element={<ProjectDetailPage/>}/>
-
+<Route path="*" element={<NotFound />} /> 
     </Routes>
     
    
