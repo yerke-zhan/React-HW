@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    font-size: large;
+    gap: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+    
+    
+
+
+div{
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+    
+}
+button{
+    margin: 20px;
+}
