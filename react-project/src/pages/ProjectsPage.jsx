@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar';
 
 export default function ProjectsPage() {
   const [projects] = useState([
@@ -29,6 +30,7 @@ export default function ProjectsPage() {
 
 return (
   <div>
+    <Navbar />
     <h1> My Projects</h1>
     <ul>
       {projects.map(project => { 

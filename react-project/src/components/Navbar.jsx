@@ -6,10 +6,12 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/project">Projects </Link>
+        <Link to="/main">Home</Link>
+        <Link to="/project"> My Projects </Link>
         <Link to="/about">About Me</Link>
+        <Link to='/'>Login</Link>
       </nav>
     </div>
   )
 }
+

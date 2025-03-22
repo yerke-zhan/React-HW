@@ -7,10 +7,6 @@ nav{
     
 }
 
-    
-    
-
-
 div{
     background-color: azure;
     color: black;
@@ -19,4 +15,12 @@ div{
 }
 button{
     margin: 20px;
+}
+
+input{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    
 }
