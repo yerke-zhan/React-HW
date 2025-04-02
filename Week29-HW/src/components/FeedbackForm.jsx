@@ -44,12 +44,12 @@ export default function FeedbackForm() {
     
     
     
-    // setMessage('')
-    // setEmail('')
-    // setName('')
-    // setComment('')
-    // setRating('');
-    // setReason('');
+    setMessage('')
+    setEmail('')
+    setName('')
+    setComment('')
+    setRating('');
+    setReason('');
    
   };
    
