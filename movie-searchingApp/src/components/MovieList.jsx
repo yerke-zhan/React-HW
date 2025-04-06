@@ -12,13 +12,17 @@ export default function MovieList({filmder}) {
       
         filmder.map((film) => {
             return (
-            <Link to ={`/movie/${film.id}`}>
+            <Link to ={`/movie/${film.imdbID}`} key={film.imdbID}>
                 <div className='movie-card'> 
-                    <img src={film.Poster? film.Poster : 'https://via.placeholder.com/300x450'} alt={film.Title} />
+                    <img src={film.Poster =="N/A"?  'https://img.freepik.com/free-vector/cinema-elements-set_74855-15362.jpg?semt=ais_hybrid'
+                    :
+                    film.Poster }
+                     alt={film.Title} />
+                    <h3>{film.Title}</h3>
                     <div>
                         <p>{film.Year}</p>
                         {/* <span>*</span> */}
-                        <p>{film.Type === 'Movie'? 'Movie' : 'Cartoon'}</p>
+                        <p>{film.Type === 'Movie'? 'Movie' : 'TV Show'}</p>
                     </div>
                 </div>
             </Link>

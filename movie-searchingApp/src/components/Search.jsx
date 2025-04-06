@@ -33,13 +33,13 @@ export default function Search({onSearch}) {
     <div className='app'>
       <h1>Movie Search App</h1>
       <form className='search-form' onSubmit={handleSubmit}>
-        <input 
+        <input className='search-input'
             type="text" 
             value={filmInput}
             placeholder='Enter movie name...'
             onChange={(e)=>setFilmInput(e.target.value)}
             />
-<button type="submit" disabled={isLoading}>  
+<button  className='search-btn' type="submit" disabled={isLoading}>  
     {isLoading ? 'Searching...' : 'Search'}
 
     </button>
