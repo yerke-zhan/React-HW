@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, } from 'react';
+
 import '../index.css';
 
 
@@ -59,10 +60,10 @@ export default function FeedbackForm() {
         {submitted ? (
                 <p style={{color:'green', backgroundColor:'#f2f2f2', padding:'10px', margin:'10px'}}>Рахмет, сіздің пікіріңіз маңызды!😊 </p>
             ) : (
-                <>
+                <div>
       <h2>Кері Байланыс Формасы</h2>
       <form onSubmit={handleSubmit}>
-        <div className='email-box'> 
+        <div> 
         <label htmlFor=''>Аты жөні:</label>
         <input type="text" 
         value={name} 
@@ -78,7 +79,7 @@ export default function FeedbackForm() {
          />
         </div>
        
-        <div className='pikir'>
+        <div >
           <label htmlFor="">Пікіріңіз</label>
           <textarea name="" id=""
           value={comment}
@@ -107,10 +108,12 @@ export default function FeedbackForm() {
         <button type="submit">Жіберу</button>
       </form> 
      
-    </>
+    </div>
   ) 
 }
+
 </div>
+
   );
 }
 
