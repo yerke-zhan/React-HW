@@ -70,3 +70,33 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+body{
+  background-color: rgb(160, 215, 215);
+  display: flex;
+}
+.test{
+ 
+  padding: 20px;
+  background-color: rgb(105, 212, 212);
+  border-radius:  10px;
+  width: 500px;
+
+}
+.main{
+  
+  padding: 20px;
+  background-color: rgb(163, 234, 234);
+  border-radius:  10px;
+  
+}
+.message-box{
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(119, 214, 214);
+  border-radius:  10px;
+  border-color:  black,;
+}
+footer{
+  margin: 50px;
+}

@@ -3,6 +3,8 @@ import {BrowserRouter as Router,  Route, Link, BrowserRouter} from "react-router
 import './App.css'
 import FeedbackForm from './components/FeedbackForm'
 import NewUser from './components/NewUser';
+import Test from './components/Test';
+import { LanguageProvider } from './components/LanguageProvider';
 
 function App() {
   
@@ -10,10 +12,13 @@ function App() {
   return (
    
     <>
-    <FeedbackForm/>
-    <NewUser/>
-
-
+   <h1>Home Work useContext</h1>
+    {/* <FeedbackForm/>
+    <NewUser/> */}
+    <LanguageProvider>
+      <Test />
+    </LanguageProvider>
+<footer>Secret language selection app 2025 </footer>
 
     </>
   )
